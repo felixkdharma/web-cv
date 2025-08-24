@@ -1,0 +1,17 @@
+.star-position {
+    position: absolute;
+    width: 95vw;
+    height: 90vh;
+    z-index: 0;
+    top:0;
+    left: 0;
+}
+
+.star-sprinkle {
+    animation: twinkle 1.5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}

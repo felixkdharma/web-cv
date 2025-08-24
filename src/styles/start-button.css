@@ -1,0 +1,8 @@
+.pixel-button {
+    box-shadow: 
+    0 0 0 4px black,
+    0 0 0 8px white,
+    0 0 0 12px black;
+    image-rendering: pixelated;
+    background-color: #B13BFF !important;
+}

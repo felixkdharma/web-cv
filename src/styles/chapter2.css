@@ -1,0 +1,36 @@
+h1{
+    color: #ffeb00;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 75px;
+}
+
+h2{
+    color: #ffeb00;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 45px; 
+}       
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.content-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 5vh;
+}
+
+.custom-list {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 11px;
+    padding: 0;
+    line-height: 1.5vh;
+    color: #ffeb00;
+    text-align: left;
+}
