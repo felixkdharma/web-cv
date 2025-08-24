@@ -1,14 +1,14 @@
-h1{
+h1 {
     color: #ffeb00;
     font-family: "Press Start 2P", system-ui;
     font-size: 75px;
 }
 
-h2{
+h2 {
     color: #ffeb00;
     font-family: "Press Start 2P", system-ui;
-    font-size: 45px; 
-}       
+    font-size: 45px;
+}
 
 .container {
     display: flex;
@@ -18,12 +18,11 @@ h2{
     margin-top: 10vh;
 }
 
-.content-container { 
+.content-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10vw;
-    margin-top: 5vh;
 }
 
 .custom-list {
