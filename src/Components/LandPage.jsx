@@ -7,6 +7,7 @@ import Mars from "./Mars";
 import Jupiter from "./Jupiter";
 import Saturnus from "./Saturnus";
 import StartButton from "./StartButton";
+import Stars from "./Stars";
 
 function LandPage() {
 
@@ -36,27 +37,7 @@ function LandPage() {
                 marginTop: '100vh'
             }} />
             <Jupiter />
-            <div className="star-position">
-                <div className="star-sprinkle">
-                    {stars.map(star => (
-                        <img
-                            key={star.id}
-                            src={"/glitter.png"}
-                            alt="star"
-                            style={{
-                                position: 'absolute',
-                                margin: 5,
-                                top: star.top,
-                                left: star.left,
-                                width: 18 + 'px',
-                                height: 18 + 'px'
-                            }}
-                        />
-                    ))}
-                </div>
-
-            </div>
-
+            <Stars />
             <Title />
             <StartButton />
         </div>
