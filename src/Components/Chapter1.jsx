@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/chapter1.css';
+import Stars from './Stars';
 
 function Chapter1(props) {
 
@@ -12,7 +13,7 @@ function Chapter1(props) {
         return {
             id: i + 1,
             top: top,
-            left: left, 
+            left: left,
         }
     });
 
@@ -48,28 +49,9 @@ function Chapter1(props) {
             </div>
 
             <div className='chapter1-container'>
-                <div className='star-position-2'>
-
-                    <div className='star-sprinkle'>
-                        {stars.map(star => (
-                            <img
-                                key={star.id}
-                                src={"/glitter.png"}
-                                alt="star"
-                                style={{
-                                    position: 'absolute',
-                                    margin: 5,
-                                    top: star.top,
-                                    left: star.left,
-                                    width: 18 + 'px',
-                                    height: 18 + 'px'
-                                }}
-                            />
-                        ))}
-                    </div>
-                </div>
-
-
+                <Stars
+                    top="-100vh"
+                />
                 <div className='text-format'>
                     <div className='header-align'>
                         <div className='glow-text'>

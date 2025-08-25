@@ -1,6 +1,7 @@
 import { Card } from "@mui/material";
 import "../styles/chapter2.css";
 import "../styles/chapter1.css";
+import Stars from "./Stars.jsx";
 import CardChapter2 from "./CardChapter2.jsx";
 
 function Chapter2(props) {
@@ -12,7 +13,7 @@ function Chapter2(props) {
   };
 
   return (
-    <section id="chapter2">
+    <section id="chapter2" style={{ position: "relative" }}>
       <div className="previous-button-container" style={{ top: 5 + "vh" }}>
         <div className="bounce-up">
           <img
@@ -39,6 +40,7 @@ function Chapter2(props) {
       </div>
 
       <div className="container">
+        <Stars />
         <h1> {props.title} </h1>
         <h2> {props.subtitle}</h2>
 
@@ -89,6 +91,10 @@ function Chapter2(props) {
           </div>
         </div>
       </div>
+      <hr style={{
+        backgroundColor: 'white',
+        marginTop: '10vh'
+      }} />
     </section>
   );
 }
