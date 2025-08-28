@@ -2,14 +2,13 @@ import Star from './LandPage.jsx';
 import LandPage from './LandPage.jsx';
 import Chapter1 from './Chapter1.jsx';
 import Chapter2 from './Chapter2.jsx';
+import Chapter3 from './Chapter3.jsx';
 
 function Menu() {
 
     return (
         <div>
-            <section id='landpage'>
-                <LandPage />
-            </section>
+            <LandPage />
             <Chapter1
                 section="chapter1"
                 title="CHAPTER 1"
@@ -22,6 +21,10 @@ function Menu() {
                 title="CHAPTER 2"
                 subtitle="The Beginning"
             />
+
+            <Chapter3
+                title="CHAPTER 3"
+                subtitle="Next Step" />
         </div>
     );
 }

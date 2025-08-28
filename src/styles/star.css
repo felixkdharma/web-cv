@@ -1,8 +1,8 @@
 .star-position {
     position: absolute;
     width: 95vw;
-    height: 90vh;
-    z-index: 0;
+    height: 100vh;
+    z-index: -1;
     top:0;
     left: 0;
 }

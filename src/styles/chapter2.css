@@ -1,15 +1,3 @@
-h1 {
-    color: #ffeb00;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 75px;
-}
-
-h2 {
-    color: #ffeb00;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 45px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
