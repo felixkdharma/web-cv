@@ -1,6 +1,8 @@
 import "../styles/common.css";
 import "../styles/chapter3.css";
 import Stars from "./Stars.jsx";
+import CardImage from "./CardImage.jsx";
+import { Card } from "@mui/material";
 
 function Chapter3(props) {
 
@@ -19,6 +21,9 @@ function Chapter3(props) {
 
                 </div>
             </div>
+            
+            <CardImage />
+
         </section>
     )
 }
