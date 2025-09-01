@@ -15,8 +15,8 @@ function CardChapter2(props) {
       <React.Fragment>
         <CardContent
           sx={{
-            maxWidth: 300,
-            minHeight: 300,
+            maxWidth: '300px',
+            minHeight: '300px',
             backgroundColor: "#577BC1",
             border: "15px solid #344CB7",
             borderRadius: "25px",
