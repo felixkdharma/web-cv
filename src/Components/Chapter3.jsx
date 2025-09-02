@@ -2,6 +2,7 @@ import "../styles/common.css";
 import "../styles/chapter3.css";
 import Stars from "./Stars.jsx";
 import CardImage from "./CardImage.jsx";
+import NavButton from "./NavButton.jsx";
 
 function Chapter3(props) {
     return (
@@ -14,6 +15,21 @@ function Chapter3(props) {
                 width: "100%",
             }}
         >
+            <NavButton
+                goto='chapter2'
+                top='5vh'
+                cursor='pointer'
+                direction='PREVIOUS'
+                className='rotate-image'
+                src='/arrowup.png'
+                alt='arrowhead'
+                color='#ffeb00'
+                fontFamily="'Press Start 2P, system-ui'"
+                left='-1vw'
+                rotate='0deg'
+                zindex='3'
+            />
+
             <Stars />
             <div className="title-container">
                 <h1> {props.title} </h1>
@@ -22,7 +38,6 @@ function Chapter3(props) {
                 </div>
             </div>
             <div className="card-container">
-
                 <CardImage
                     title="PT Realta Chakra Dharma"
                     subtitle="Working as Fullstack .NET Developer - 2 Years++ WOE"
@@ -53,6 +68,22 @@ function Chapter3(props) {
                     }}
                 />
             </div>
+
+            <NavButton
+                goto='chapter3'
+                top='2vh'
+                cursor='pointer'
+                direction='NEXT'
+                className='rotate-image'
+                src='/arrowup.png'
+                alt='arrowhead'
+                color='#ffeb00'
+                fontFamily="'Press Start 2P, system-ui'"
+                left='-0.1vw'
+                rotate='180deg'
+                margin='0'
+                padding='0'
+            />
         </section>
     );
 }
