@@ -20,33 +20,28 @@ function CardImage(props) {
           }}
         >
           <React.Fragment>
-
             <CardContent
               sx={{
-                maxWidth: '300px',
-                height: 'auto',
+                maxWidth: "300px",
+                height: "auto",
                 backgroundColor: "#577BC1",
                 border: "15px solid #344CB7",
                 borderRadius: "25px",
               }}
             >
-
               <CardMedia
                 sx={{
                   height: props.images.height,
                   width: props.images.width,
-                  objectFit: 'cover',
-                  objectPosition: 'center',
-                  mx: 'auto',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  mx: "auto",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                 }}
                 component="img"
                 src={props.images.src}
-                alt="arrowhead">
-
-              </CardMedia>
-
-
+                alt="arrowhead"
+              ></CardMedia>
 
               <Typography
                 sx={{
@@ -81,7 +76,20 @@ function CardImage(props) {
               <ul>
                 <div className="custom-list">
                   {props.items.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li key={index}>
+                      {" "}
+                      {item.pdf ? (
+                        <span
+                          style={{ color: "blue", cursor: "pointer" }}
+                          onClick={() => window.open(item.pdf, "_blank")}
+                        >
+                          {" "}
+                          {item.text}{" "}
+                        </span>
+                      ) : (
+                        item.text
+                      )}
+                    </li>
                   ))}
                 </div>
               </ul>
@@ -90,7 +98,6 @@ function CardImage(props) {
         </Card>
       </Grid>
     </Grid>
-
   );
 }
 

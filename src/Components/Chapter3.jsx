@@ -3,6 +3,7 @@ import "../styles/chapter3.css";
 import Stars from "./Stars.jsx";
 import CardImage from "./CardImage.jsx";
 import NavButton from "./NavButton.jsx";
+import Ufo from "./Ufo.jsx";
 
 function Chapter3(props) {
   return (
@@ -37,14 +38,34 @@ function Chapter3(props) {
           <h2> {props.subtitle} </h2>
         </div>
       </div>
+      <Ufo
+        position="absolute"
+        top="30%"
+        left="33%"
+        height="80px"
+        width="80px"
+      />
+
+      <Ufo
+        position="absolute"
+        top="30%"
+        left="63%"
+        height="80px"
+        width="80px"
+      />
+
       <div className="card-container">
         <CardImage
           title="PT Realta Chakra Dharma"
           subtitle="Working as Fullstack .NET Developer - 2 Years++ WOE"
           items={[
-            "Designing, Creating and Bug Fixing programs for Hospitality and Golf Management.",
-            "Creating and Bug Fixing an API for Caddy Apps.",
-            "Designing, Creating and Bug Fixing Reports using Crystal Reports.",
+            {
+              text: "Designing, Creating and Bug Fixing programs for Hospitality and Golf Management.",
+            },
+            { text: "Creating and Bug Fixing an API for Caddy Apps." },
+            {
+              text: "Designing, Creating and Bug Fixing Reports using Crystal Reports.",
+            },
           ]}
           images={{
             height: 100,
@@ -57,20 +78,29 @@ function Chapter3(props) {
           title="Udemy Course"
           subtitle="Fullstack React Web Developer"
           items={[
-            "Learning From Backend to Frontend",
-            "Learning and Practicing make REST API using NodeJs and PostgreSQL",
-            "Designing, Creating and Bug Fixing Reports using Crystal Reports.",
+            { text: "Learning From Backend to Frontend" },
+            {
+              text: "Learning and Practicing make REST API using NodeJs and PostgreSQL",
+            },
+            {
+              text: "Designing, Creating and Bug Fixing Reports using Crystal Reports.",
+            },
+            {
+              text: "Click to view Certificate ",
+              pdf: "/sertifikat-reactjs.pdf",
+            },
           ]}
           images={{
             height: 100,
             width: 200,
             src: "/logo-udemy.png",
           }}
+          others
         />
       </div>
 
       <NavButton
-        goto="chapter3"
+        goto="chapter4"
         top="2vh"
         cursor="pointer"
         direction="NEXT"
