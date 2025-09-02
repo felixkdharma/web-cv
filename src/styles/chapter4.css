@@ -1,0 +1,22 @@
+.title-container-chapter4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18vh;
+    text-align: center;
+    line-height: 7em;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+h3 {
+    color: #ffeb00;
+    font-family: "Press Start 2P", system-ui;
+}

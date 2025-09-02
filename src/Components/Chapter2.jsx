@@ -7,32 +7,34 @@ import CardChapter2 from "./CardChapter2.jsx";
 import NavButton from "./NavButton.jsx";
 
 function Chapter2(props) {
-
   return (
-    <section id="chapter2" style={{
-      position: 'relative',
-      minHeight: '100vh',
-      overflow: 'hidden',
-      width: '100%',
-    }}>
-
+    <section
+      id="chapter2"
+      style={{
+        position: "relative",
+        minHeight: "100vh",
+        overflow: "hidden",
+        width: "100%",
+      }}
+    >
       <NavButton
-        goto='chapter1'
-        top='5vh'
-        cursor='pointer'
-        direction='PREVIOUS'
-        className='rotate-image'
-        src='/arrowup.png'
-        alt='arrowhead'
-        color='#ffeb00'
+        goto="chapter1"
+        top="5vh"
+        cursor="pointer"
+        direction="PREVIOUS"
+        className="rotate-image"
+        src="/arrowup.png"
+        alt="arrowhead"
+        color="#ffeb00"
         fontFamily="'Press Start 2P, system-ui'"
-        left='-1vw'
-        rotate='0deg'
-        zindex='3'
+        left="-1vw"
+        rotate="0deg"
+        zindex="3"
       />
 
       <div className="container">
         <Stars />
+
         <h1> {props.title} </h1>
         <h2> {props.subtitle}</h2>
 
@@ -46,7 +48,7 @@ function Chapter2(props) {
               "Active in extracurricular activities and Student Council",
             ]}
           />
-          
+
           <CardChapter2
             title="COLLEGE"
             subtitle="INSTITUT TEKNOLOGI HARAPAN BANGSA"
@@ -61,19 +63,19 @@ function Chapter2(props) {
       </div>
 
       <NavButton
-        goto='chapter3'
-        top='5vh'
-        cursor='pointer'
-        direction='NEXT'
-        className='rotate-image'
-        src='/arrowup.png'
-        alt='arrowhead'
-        color='#ffeb00'
+        goto="chapter3"
+        top="5vh"
+        cursor="pointer"
+        direction="NEXT"
+        className="rotate-image"
+        src="/arrowup.png"
+        alt="arrowhead"
+        color="#ffeb00"
         fontFamily="'Press Start 2P, system-ui'"
-        left='-0.1vw'
-        rotate='180deg'
-        margin='0'
-        padding='0'
+        left="-0.1vw"
+        rotate="180deg"
+        margin="0"
+        padding="0"
       />
     </section>
   );
